@@ -3,10 +3,12 @@
         <div class="container">
             <nav class="navbar shadow bg-white rounded justify-content-between flex-nowrap flex-row fixed-top">
                 <div class="container">
-                    <h1 class="navbar-brand float-left">SCCI Cloud storage</h1>
+                    <div class="banner">
+                        <a class="navbar-brand" href="/"><img alt="Logo" src="src/assets/img/SCCI_brand_logo.jpg" title="SCCI Cloud Home"></a>
+                    </div>
                     <ul class="nav navbar-nav flex-row float-right">
                       <li class="nav-item">
-                        <router-link class="nav-link pr-3" to="/login">Sign in</router-link>
+                        <router-link class="btn btn-light" to="/login">Sign in</router-link>
                       </li>
                       <li class="nav-item">
                         <router-link class="btn btn-outline-primary" to="/register">Sign up</router-link>
@@ -14,6 +16,7 @@
                     </ul>
                 </div>
             </nav>
+            <br><br><br><br><br><br>
             <div class="row">
                 <div class="col-sm-6 offset-sm-3">
                     <div v-if="alert.message" :class="`alert ${alert.type}`">{{alert.message}}</div>
